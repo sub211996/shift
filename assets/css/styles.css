@@ -1,0 +1,242 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+button:focus{
+    outline: none;
+    border: none;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    background: #434353;
+    overflow-x: hidden;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+.navbar{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    background: #434353;
+    z-index: 8;
+}
+.navbar .navbar-toggler{
+    color:#fff;
+    font-size:24px;
+}
+.navbar .navbar-nav .nav-item .nav-link{
+    color:#fff;
+    font-size:16px;
+}
+.question_section{
+    margin-top:20vh;
+}
+.question_section .heading{
+    text-align:center;
+    font-weight: 600;
+    color:#fff;
+    margin-bottom: 25px;
+}
+.question_card{
+    max-width:760px;
+    display: block;
+    margin: 10px auto;
+}
+.question_card.card{
+    padding: 45px 35px 45px 20px;
+}
+.question-block{
+    padding-bottom: 45px;
+    position: relative;
+    margin-bottom: 40px;
+}
+.question-block::after{
+    content: '';
+    background: #ddd;
+    height: 1px;
+    width: 105%;
+    position: absolute;
+    display: block;
+    bottom: 0;
+    left: -10px;
+}
+.question-block:last-child{
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+.question-block:last-child::after{
+    display: none;
+}
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 48px;
+    height: 24px;
+}
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 5px;
+    bottom: 3px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+input:checked + .slider {
+    background-color: #5fa4a2;
+}
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+input:checked + .slider:before {
+    -webkit-transform: translateX(22px);
+    -ms-transform: translateX(22x);
+    transform: translateX(22px);
+}
+.slider.round {
+    border-radius: 34px;
+}
+.slider.round:before {
+    border-radius: 50%;
+}
+.review--btn{
+    background: #5FA4A2;
+    border-radius: 25px;
+    border:none;
+    outline:none;
+    display: block;
+    margin: 0 auto;
+    padding: 10px 47px;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 0.4px;
+    font-size: 16px;
+}
+.review--btn:disabled{
+    background: #C6C6C6;
+    color: #fff;
+}
+.text--grey{
+    color: #CDCDCD;
+    font-size:16px;
+    font-weight: 600;
+}
+.question{
+    font-weight:700;
+    font-size:22px;
+    margin-bottom: 12px;
+}
+.question--btn{
+    color:#5FA4A2;
+    background: none;
+    border:none;
+    outline: none;
+    font-size:18px;
+}
+.custom--select{
+    min-width: 281px;
+    margin-left: 55px;
+}
+.add--question{
+    margin-top: 42px;
+    margin-left: 18px;
+    display: flex;
+    align-items:center;
+    border:none;
+    background: transparent;
+    margin-bottom:30px;
+    color: #5FA4A2;
+    font-size:16px;
+    font-weight: 600;
+}
+
+.add--question:disabled{
+    color:#CDCDCD;
+    cursor: not-allowed;
+}
+.custom--select .list{
+    width: 100%;
+}
+.question--input.form-control{
+    border-color: #e8e8e8;
+}
+.question--input.form-control:focus{
+    border-color: #999;
+    box-shadow: none;
+}
+.modal-header{
+    justify-content: center;
+}
+.modal-header,.modal-footer{
+    border:none;
+}
+.modal-header .close{
+    position: absolute;
+    top: 23px;
+    right: 34px;
+    font-size: 28px;
+    margin: 0;
+    padding: 0;
+    transition: 0.3s all ease;
+}
+.modal-header .close:hover{
+    color:#dc3545;
+}
+.modal-body h4{
+   font-size:16px; 
+   font-weight:700;
+   margin-bottom: 3px;
+}
+.modal-body p{
+    font-size: 16px;
+    margin-bottom:20px;
+}
+.modal-content{
+    padding: 18px;
+}
+.alert--select{
+    color: #AEAEAE;
+    font-size:14px;
+    padding-left: 55px;
+    display: none;
+}
+
+
+.modal-actions .review--btn{
+    padding:12px 85px;
+    background: #5FA4A2;
+}
+.modal--arrow{
+    position:absolute;
+    top: 40px;
+    left: 35px;
+}
+.numeric_selected--row{
+    display: none;
+    margin-top:25px;
+    margin-bottom: 25px;
+}
+.numeric_selected--row .col{
+    border:1px solid #ddd;
+}
+
