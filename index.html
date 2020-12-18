@@ -55,7 +55,7 @@
             </div>
             
             <div class="row ml-0 mr-0">
-              <button class="text--grey add--question" type="button">
+              <button class="text--grey add--question" type="button" id="add_question--btn">
                 <img src="./assets/img/+.png" class="img-fluid" alt="">&nbsp;&nbsp;Add another question
               </button>
             </div>
@@ -65,6 +65,54 @@
           </div>
         </form>
     </section>
+
+    <footer>
+      <div class="blur"></div>
+      <div class="row">
+        <div class="col-md-3">
+          <h3>Address</h3>
+          <p>Tectonic<br>
+            1–15 Clere Street<br>
+            London EC2A 4UY</p>
+        </div>
+        <div class="col-md-3">
+          <h3>Phone</h3>
+          <p>+44 (0) 1234 5678</p>
+        </div>
+        <div class="col-md-3">
+          <h3>Email</h3>
+          <a href="mailto:info@shift.com">info@shift.com</a>
+        </div>
+        <div class="col-md-3 d-flex justify-content-end socials">
+            <a href="#" class="mr-3">
+              <img src="./assets/img/insta.png" alt="">
+            </a>
+            <a href="#" class="mr-3">
+              <img src="./assets/img/fb.png" alt="">
+            </a>
+            <a href="#">
+              <img src="./assets/img/twitter.png" alt="">
+            </a>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col-md-3">
+          <h3 >Help and Advice</h3>
+          <a href="#">How it works</a>
+          <a href="#">Terms & Conditioons</a>
+          <a href="#">Privacy Policy</a>
+        </div>
+        <div class="col-md-3">
+          <h3>Company</h3>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+        </div>
+      </div>
+      <div class="footer-copy d-flex align-items-center justify-content-between">
+        <img src="./assets/img/Shift-logo.png" alt="">
+        <span>&copy; Tectonic 2020</span>
+      </div>
+    </footer>
     
     <div class="modal fade" id="myModal">
       <div class="modal-dialog modal-lg">
@@ -105,3 +153,93 @@
     <script src="assets/js/main.js"></script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+<!-- Injected HTML -->
+<!-- <div class="question-block">
+  <div class="row ml-0 mr-0">
+      <div class="col-1">
+          <img src="./assets/img/Arrow.png" alt="">
+      </div>
+      <div class="col-11">
+          <div class="row justify-content-between">
+              <h4 class="question">Question 1</h4>
+              <div class="d-flex align-items-center">
+                  <h4 class="text--grey">Optional</h4>&nbsp;&nbsp;
+                  <label class="switch">
+                      <input type="checkbox" id="optional-%id%">
+                      <span class="slider round"></span>
+                  </label>
+              </div>
+          </div>
+
+          <div class="row">
+              <input id="question-%id%" type="text" class="form-control question--input" placeholder="Type here" oninput="onInput(this)" required>
+          </div>
+          <div class="row mt-4">
+              <div class="col-1">
+                  <img src="./assets/img/Arrow.png" alt="">
+              </div>
+              <div class="col-11">
+                  <h4 class="question">Choose a question type 
+                  <button type="button" class="question--btn" data-toggle="modal" data-target="#myModal">
+                      <i class="fa fa-question-circle"></i>
+                  </button>
+                  </h4>
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-6">
+                  <select class="custom--select" id="question-type-%id%" onchange="onChangeQUestionType(this)" required>
+                      <option class="form-control" data-display="Choose a question type">Choose a question type</option>
+                      <option value="1">Yes/No</option>
+                      <option value="numericscale">Numeric scale - opinion</option>
+                      <option value="3">Single choice</option>
+                      <option value="4">Multiple choice</option>
+                      <option value="5">Open Text</option>
+                  </select>
+              </div>
+              <div class="col-6 alert--select" id="alert-select-%id%">
+                  The study participants can only answer Yes or No
+              </div>
+          </div>
+          <div class="row numeric_selected--row">
+              <div class="col-md-11 offset-1 pr-0">
+                  <div class="row no-gutters numeric--scale">
+                      <div class="col scale">1</div>
+                      <div class="col scale">2</div>
+                      <div class="col scale">3</div>
+                      <div class="col scale">4</div>
+                      <div class="col scale">5</div>
+                  </div>
+              </div>
+              <div class="col-md-11 offset-1 pr-0">
+                  <div class="row numeric_scale--input-lable">
+                      <div class="col-md">
+                          <input type="text" class="form-control" placeholder="Add label e.g. ‘disagree’">
+                      </div>
+                      <div class="col-md offset-3">
+                          <input type="text" class="form-control" placeholder="Add label e.g. ‘strongly agree’">
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="row single_choice--row">
+              <div class="col-md-11 offset-1 pr-0">
+                  <div class="row">
+                      <div class="col-md-12">
+                          <input class="form-control" placeholder="Answer 1">
+                          <input class="form-control" placeholder="Answer 2">
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div> -->
