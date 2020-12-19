@@ -321,6 +321,13 @@ footer a:hover{
     height: 309px;
     background-image: linear-gradient(to bottom, #2e2e3a , #434353);
 }
+.question--delete{
+    background: #f3f3f3;
+    border: none;
+    padding: 2px 8px;
+    margin-left: 12px;
+    margin-bottom: 8px;
+}
 @media (max-width: 411px){
     .navbar{
         padding: 10px 15px;
