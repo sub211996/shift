@@ -36,7 +36,7 @@ var question_block_HTML = `
       </div>
       <div class="col-11 pl-2">
           <div class="row justify-content-between">
-              <h4 class="question">Question %noOfQuestionCount%</h4>
+              <h4 class="question question--title">Question %noOfQuestionCount%</h4>
               <div class="d-flex align-items-center">
                   <h4 class="text--grey">Optional</h4>&nbsp;&nbsp;
                   <label class="switch">
@@ -357,11 +357,38 @@ function inputValidityMultipleChoice(id){
     }
 }
 
-function onDeleteQuestion(){
+function onDeleteQuestion(event){
+    let id = event.id.split('-')[event.id.split('-').length - 1];
+    console.log(id)
+    
+    document.getElementById(`question-block-${id}`).style.display = "none";
+    document.getElementById(`question-block-${id}`).parentNode.removeChild(document.getElementById(`question-block-${id}`));
 
+    console.log(document.querySelectorAll('.question--title'));
+
+    let questionArr = document.querySelectorAll('.question--title');
+    let qustionModCounter;
+    for(let i=0; i<questionArr.length; i++){
+        questionArr[i].textContent = `Question ${i+1}`;
+    }
+
+    // let questionBlockArr = document.querySelectorAll('.question-block');
+    // noOfQuestionCount = parseInt(questionBlockArr.length);
+    // for(let i=0; i< questionBlockArr.length-1; i++){
+    //     console.log(document.querySelector(`#question-block-${id} .question`).innerHTML)
+    //     console.log(questionBlockArr[i])
+        
+    //     noOfQuestionCount=i+1;
+    //     document.querySelector(`#question-block-${id} .question`).innerHTML = `${noOfQuestionCount}`;
+    //     console.log(noOfQuestionCount)
+    // }
+
+
+
+    questionTypeValid = true;
+    questionInputValid = true;
+    checkValidity(questionInputValid, questionTypeValid);
 }
-
-
 function initForm(){
     questionInputValid = false;
     questionTypeValid = false;
@@ -394,15 +421,5 @@ function initForm(){
     // noOfQuestions();
 }
 initForm();
-
-function onDeleteQuestion(event){
-    let id = event.id.split('-')[event.id.split('-').length - 1];
-    console.log(id)
-    document.getElementById(`question-block-${id}`).style.display = "none";
-    questionTypeValid = true;
-    questionInputValid = true;
-    checkValidity(questionInputValid, questionTypeValid)
-}
-
 
 
