@@ -6,6 +6,11 @@ $(document).ready(function() {
             el.classList.add('col-6')
         })
     }
+
+    // $('.control-options input[type="checkbox"]').ezMark({
+    //     checkboxCls: 'your-default-checkbox-class-name' ,
+    //     checkedCls: 'your-checkbox-class-in-checked-state'
+    // });
 });
 
 
@@ -78,7 +83,7 @@ var question_block_HTML = `
               </div>
           </div>
           <div class="row numeric_selected--row" id="numeric_selected--row-%id%">
-              <div class="col-md-11 offset-1 pr-0">
+              <div class="col-md-11 offset-md-1 pr-0">
                   <div class="row no-gutters numeric--scale">
                       <div class="col scale">1</div>
                       <div class="col scale">2</div>
@@ -245,6 +250,9 @@ function onChangeQUestionType(w){
         document.getElementById(`alert-select-${id}`).textContent = 'Your study participants write out their answer in their own words.'
         document.getElementById(`multiple_choice--row-${id}`).style.display = "none";
         document.getElementById(`single_choice--row-${id}`).style.display = "none";
+        questionTypeValid = true;
+        checkValidity(questionInputValid, questionTypeValid);
+
     } else {
         document.getElementById(`alert-select-${id}`).style.display = "none";
         document.getElementById(`numeric_selected--row-${id}`).style.display = "none";
@@ -367,7 +375,6 @@ function onDeleteQuestion(event){
     console.log(document.querySelectorAll('.question--title'));
 
     let questionArr = document.querySelectorAll('.question--title');
-    let qustionModCounter;
     for(let i=0; i<questionArr.length; i++){
         questionArr[i].textContent = `Question ${i+1}`;
     }
@@ -410,15 +417,12 @@ function initForm(){
     new_Question_HTML = new_Question_HTML.replaceAll('%noOfQuestionCount%', noOfQuestionCount+1)
     
     questions.push({id:ID, question: '', questionType: '', optional: false});
-    
     questionBlock.insertAdjacentHTML('beforeend', new_Question_HTML);
     
     
     console.log(document.querySelectorAll('.question-block'), questionBlockArr.length, noOfQuestionCount)
 
     $('select').niceSelect();
-
-    // noOfQuestions();
 }
 initForm();
 
