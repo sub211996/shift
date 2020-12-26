@@ -215,7 +215,7 @@ input:checked + .slider:before {
     margin-bottom:20px;
 }
 .modal-content{
-    padding: 18px;
+    padding: 20px 56px 18px 73px;
 }
 .alert--select{
     color: #AEAEAE;
@@ -223,11 +223,15 @@ input:checked + .slider:before {
     padding-left: 55px;
     display: none;
 }
-
-
 .modal-actions .review--btn{
-    padding:12px 85px;
+    padding:12px 0px;
     background: #5FA4A2;
+    width: 58%;
+    text-align: center;
+}
+.modal-actions .review--btn:hover{
+    text-decoration: none;
+    color:#fff;
 }
 .modal--arrow{
     position:absolute;
@@ -530,6 +534,64 @@ footer a:hover{
     text-decoration: underline;
     margin-bottom: 4px;
 }
-.dasboard .heading{
+.dashboard .heading{
     margin-bottom: 40px;
+}
+@media (max-width: 767px){
+    .dashboard_wrapper--row{
+        padding:0;
+    }
+    .control-options, .control-options div{
+        flex-direction: column;
+    }
+    .checkbox--wrapper{
+        margin:10px 0 15px 0;
+    }
+    .dashboard .custom--select{
+        width:100%!important;
+    }
+    .arrow--icon{
+        display: none;
+    }
+}
+
+@media(max-width:411px){
+    .responsive--mob{
+        display: flex;
+        align-items: center;
+    }
+    .responsive--mob .head{
+        font-size: 16px;
+        font-weight: 600;
+        margin-right: 10px;
+    }
+    .create_study--btn{
+        width:63%;
+        margin:0 auto;
+        padding: 13px 19px;
+    }
+    .responsive--mob .name, .type, .status, .responses {
+        font-size: 16px;
+        font-weight: 600;
+    }
+    .dashboard--fig{
+        height:161px;
+    }
+    .date{
+        position: absolute;
+    }
+    .status div {
+        width: 12px;
+        height: 12px;
+        margin-right: 6px;
+    }
+    .learn--link-wrap{
+        justify-content: flex-start!important;
+    }
+}
+.modal-title{
+    text-align:left;
+}
+.dashboard .modal-header{
+    justify-content: start!important;
 }

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./assets/css/nice-select.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-md">
+        <a class="navbar-brand" href="#">
+            <img src="./assets/img/Shift-logo.png" alt="">
+        </a>
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <i class="fa fa-bars"></i>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav ml-auto mt-2">
+            <li class="nav-item">
+              <a class="nav-link" href="#">My studies</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Customer Profiles</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Account</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Logout&nbsp;&nbsp;<i class="fa fa-power-off"></i></a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+
+
+    <section class="question_section">
+      <h1 class="heading">Add study questions</h1>
+        <form>
+        </form>
+    </section>
+
+    <footer>
+      <div class="blur"></div>
+      <div class="row">
+        <div class="col-md-3">
+          <h3>Address</h3>
+          <p>Tectonic<br>
+            1–15 Clere Street<br>
+            London EC2A 4UY</p>
+        </div>
+        <div class="col-md-3">
+          <h3>Phone</h3>
+          <p>+44 (0) 1234 5678</p>
+        </div>
+        <div class="col-md-3">
+          <h3>Email</h3>
+          <a href="mailto:info@shift.com">info@shift.com</a>
+        </div>
+        <div class="col-md-3 d-flex justify-content-end socials">
+            <a href="#" class="mr-3">
+              <img src="./assets/img/insta.png" alt="">
+            </a>
+            <a href="#" class="mr-3">
+              <img src="./assets/img/fb.png" alt="">
+            </a>
+            <a href="#">
+              <img src="./assets/img/twitter.png" alt="">
+            </a>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col-md-3">
+          <h3 >Help and Advice</h3>
+          <a href="#">How it works</a>
+          <a href="#">Terms & Conditioons</a>
+          <a href="#">Privacy Policy</a>
+        </div>
+        <div class="col-md-3">
+          <h3>Company</h3>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+        </div>
+      </div>
+      <div class="footer-copy d-flex align-items-center justify-content-between">
+        <img src="./assets/img/Shift-logo.png" alt="">
+        <span>&copy; Tectonic 2020</span>
+      </div>
+    </footer>
+
+
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="./assets/js/jquery.nice-select.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+<!-- Injected HTML -->
+<!-- <div class="question-block">
+  <div class="row ml-0 mr-0">
+      <div class="col-1">
+          <img src="./assets/img/Arrow.png" alt="">
+      </div>
+      <div class="col-11">
+          <div class="row justify-content-between">
+              <h4 class="question">Question 1</h4>
+              <div class="d-flex align-items-center">
+                  <h4 class="text--grey">Optional</h4>&nbsp;&nbsp;
+                  <label class="switch">
+                      <input type="checkbox" id="optional-%id%">
+                      <span class="slider round"></span>
+                  </label>
+              </div>
+          </div>
+
+          <div class="row">
+              <input id="question-%id%" type="text" class="form-control question--input" placeholder="Type here" oninput="onInput(this)" required>
+          </div>
+          <div class="row mt-4">
+              <div class="col-1">
+                  <img src="./assets/img/Arrow.png" alt="">
+              </div>
+              <div class="col-11">
+                  <h4 class="question">Choose a question type 
+                  <button type="button" class="question--btn" data-toggle="modal" data-target="#myModal">
+                      <i class="fa fa-question-circle"></i>
+                  </button>
+                  </h4>
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-6">
+                  <select class="custom--select" id="question-type-%id%" onchange="onChangeQUestionType(this)" required>
+                      <option class="form-control" data-display="Choose a question type">Choose a question type</option>
+                      <option value="1">Yes/No</option>
+                      <option value="numericscale">Numeric scale - opinion</option>
+                      <option value="3">Single choice</option>
+                      <option value="4">Multiple choice</option>
+                      <option value="5">Open Text</option>
+                  </select>
+              </div>
+              <div class="col-6 alert--select" id="alert-select-%id%">
+                  The study participants can only answer Yes or No
+              </div>
+          </div>
+          <div class="row numeric_selected--row">
+              <div class="col-md-11 offset-1 pr-0">
+                  <div class="row no-gutters numeric--scale">
+                      <div class="col scale">1</div>
+                      <div class="col scale">2</div>
+                      <div class="col scale">3</div>
+                      <div class="col scale">4</div>
+                      <div class="col scale">5</div>
+                  </div>
+              </div>
+              <div class="col-md-11 offset-1 pr-0">
+                  <div class="row numeric_scale--input-lable">
+                      <div class="col-md">
+                          <input type="text" class="form-control" placeholder="Add label e.g. ‘disagree’">
+                      </div>
+                      <div class="col-md offset-3">
+                          <input type="text" class="form-control" placeholder="Add label e.g. ‘strongly agree’">
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="row single_choice--row">
+              <div class="col-md-11 offset-1 pr-0">
+                  <div class="row">
+                      <div class="col-md-12">
+                          <input class="form-control" placeholder="Answer 1">
+                          <input class="form-control" placeholder="Answer 2">
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div> -->

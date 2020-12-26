@@ -47,7 +47,7 @@
     </nav>
 
 
-    <section class="question_section dasboard">
+    <section class="question_section dashboard">
       <h1 class="heading">Study overview</h1>
 
       <div class="row dashboard_wrapper--row">
@@ -83,15 +83,15 @@
             </div>
           </div>
         </div>
-        <div class="col-md-12 d-flex justify-content-end"> 
-          <a href="#" class="learn--link">Learn how to set up a study</a>
+        <div class="col-md-12 d-flex justify-content-end learn--link-wrap"> 
+          <a href="#" class="learn--link" data-toggle="modal" data-target="#myModal">Learn how to set up a study</a>
         </div>
         <div class="col-md-12">
           <div class="row study--single">
             <div class="col-md-1 arrow--wrapper">
               <img src="../assets/img/Arrow.png" class="arrow--icon" alt="">
             </div>
-            <div class="col-md-5">
+            <div class="col-md-5 responsive--mob">
               <div class="head">
                 Study name
               </div>
@@ -99,7 +99,7 @@
                 Alpha One Zero
               </div>
             </div>
-            <div class="col-md-2">
+            <div class="col-md-2 responsive--mob">
               <div class="head">
                 Customer type
               </div>
@@ -107,7 +107,7 @@
                 Target
               </div>
             </div>
-            <div class="col-md-2">
+            <div class="col-md-2 responsive--mob">
               <div class="head">
                 Status
               </div>
@@ -115,7 +115,7 @@
                 <div></div> Draft
               </div>
             </div>
-            <div class="col-md-2">
+            <div class="col-md-2 responsive--mob">
               <div class="head">
                 Responses
               </div>
@@ -130,7 +130,7 @@
             <div class="col-md-1 arrow--wrapper">
               <img src="../assets/img/Arrow.png" class="arrow--icon" alt="">
             </div>
-            <div class="col-md-5">
+            <div class="col-md-5 responsive--mob">
               <div class="head">
                 Study name
               </div>
@@ -138,7 +138,7 @@
                 Alpha One Zero
               </div>
             </div>
-            <div class="col-md-2">
+            <div class="col-md-2 responsive--mob">
               <div class="head">
                 Customer type
               </div>
@@ -146,7 +146,7 @@
                 Target
               </div>
             </div>
-            <div class="col-md-2">
+            <div class="col-md-2 responsive--mob">
               <div class="head">
                 Status
               </div>
@@ -154,7 +154,7 @@
                 <div></div> Active
               </div>
             </div>
-            <div class="col-md-2">
+            <div class="col-md-2 responsive--mob">
               <div class="head">
                 Responses
               </div>
@@ -169,7 +169,7 @@
             <div class="col-md-1 arrow--wrapper">
               <img src="../assets/img/Arrow.png" class="arrow--icon" alt="">
             </div>
-            <div class="col-md-5">
+            <div class="col-md-5 responsive--mob">
               <div class="head">
                 Study name
               </div>
@@ -177,7 +177,7 @@
                 Alpha One Zero
               </div>
             </div>
-            <div class="col-md-2">
+            <div class="col-md-2 responsive--mob">
               <div class="head">
                 Customer type
               </div>
@@ -185,7 +185,7 @@
                 Target
               </div>
             </div>
-            <div class="col-md-2">
+            <div class="col-md-2 responsive--mob">
               <div class="head">
                 Status
               </div>
@@ -193,7 +193,7 @@
                 <div></div> Closed
               </div>
             </div>
-            <div class="col-md-2">
+            <div class="col-md-2 responsive--mob">
               <div class="head">
                 Responses
               </div>
@@ -205,11 +205,56 @@
             
           </div>
         </div>
-      
 
+      <img src="../assets/img/dashboard-fight.png" class="dashboard--fig" alt="">
 
-      <img src="../assets/img/dashboard-fight.png" alt="">
+      <!-- POPUP TECTONIC -->
+      <div class="modal fade" id="myModal">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <img src="../assets/img/Arrow.png" class="modal--arrow" alt="">
+                  <h4 class="modal-title">Do you want to make a Tectonic Customer Discovery study or a regular study?</h4>
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div>
+              <div class="modal-body">
+                  <p>The Tectonic Customer Discovery study deepens you understanding of what 
+                    problems you are trying to solve, what your assumptions 
+                    are and which hypothesis you are trying to validate through your study</p>
+                  
+                  <div class="modal-actions mt-4 pt-4">
+                      <a href="#" class="review--btn mb-3" data-toggle="modal" data-target="#myModalTectonicStudy">Tectonic Customer Discovery Study</a>
+                      <a href="#" class="review--btn mb-3" data-toggle="modal" data-dismiss="modal" data-target="#myModalRegularStudy">Regular Study</a>
+                  </div>
+              </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- POPUP REGULAR STUDY -->
+      <div class="modal fade" id="myModalRegularStudy">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <img src="../assets/img/Arrow.png" class="modal--arrow" alt="">
+                  <h4 class="modal-title">Which Audience is this study for?</h4>
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div>
+              <div class="modal-body">
+                  <p>Are you planning on sending this study to a targeted demographic 
+                    group or sharing it with your own respondents?</p>
+                  
+                  <div class="modal-actions mt-4 pt-4">
+                      <a href="./create-your-study.html" class="review--btn mb-3">Current Customers</a>
+                      <a href="#" class="review--btn mb-3" data-dismiss="modal">Targeted Customers</a>
+                  </div>
+              </div>
+          </div>
+        </div>
+      </div>
     </section>
+
+    
 
     <footer class="dash-footer">
       <div class="blur"></div>
@@ -258,38 +303,6 @@
         <span>&copy; Tectonic 2020</span>
       </div>
     </footer>
-    
-    <div class="modal fade" id="myModal">
-      <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h4 class="modal-title">Choosing a question type</h4>
-            <button type="button" class="close" data-dismiss="modal">&times;</button>
-          </div>
-          <div class="modal-body">
-            <h4>Yes/No</h4>
-            <p>The study participants can only answer Yes or No</p>
-
-            <h4>Numeric Scale - Opinion</h4>
-            <p>Give your study participants a numbered scale to choose from. 
-              Great for letting people express their feelings.</p>
-
-            <h4>Single Choice</h4>
-            <p>Your study participants can only choose one answer from a list of answers</p>
-
-            <h4>Multiple Choice</h4>
-            <p>Let your study participants choose more than one answer from a list of answers</p>
-
-            <h4>Open text</h4>
-            <p>Let your study participants write out their answer in their own words.</p>
-          </div>
-          <div class="modal-footer">
-            <button type="button" data-dismiss="modal" class="review--btn">Ok</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
