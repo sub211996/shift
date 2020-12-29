@@ -7,6 +7,9 @@ button:focus{
     outline: none;
     border: none;
 }
+:root{
+    --color-blue:#5FA4A2;
+}
 body{
     font-family: 'Open Sans', sans-serif;
     background: #434353;
@@ -105,7 +108,7 @@ body{
     transition: .4s;
 }
 input:checked + .slider {
-    background-color: #5fa4a2;
+    background-color: var(--color-blue);
 }
 input:focus + .slider {
     box-shadow: 0 0 1px #2196F3;
@@ -122,7 +125,7 @@ input:checked + .slider:before {
     border-radius: 50%;
 }
 .review--btn{
-    background: #5FA4A2;
+    background: var(--color-blue);
     border-radius: 25px;
     border:none;
     outline:none;
@@ -150,7 +153,7 @@ input:checked + .slider:before {
     margin-bottom: 12px;
 }
 .question--btn{
-    color:#5FA4A2;
+    color:var(--color-blue);
     background: none;
     border:none;
     outline: none;
@@ -168,7 +171,7 @@ input:checked + .slider:before {
     border:none;
     background: transparent;
     margin-bottom:30px;
-    color: #5FA4A2;
+    color: var(--color-blue);
     font-size:16px;
     font-weight: 600;
 }
@@ -225,7 +228,7 @@ input:checked + .slider:before {
 }
 .modal-actions .review--btn{
     padding:12px 0px;
-    background: #5FA4A2;
+    background: var(--color-blue);
     width: 58%;
     text-align: center;
 }
@@ -285,7 +288,7 @@ input:checked + .slider:before {
     border:none;
     background: transparent;
     margin-bottom:30px;
-    color: #5FA4A2;
+    color: var(--color-blue);
     font-size:16px;
     font-weight: 600;
 }
@@ -504,7 +507,7 @@ footer a:hover{
     background: #C6C6C6;
 }
 .status.active div{
-    background: #5FA4A2;
+    background: var(--color-blue);
 }
 .status.closed div{
     background: #2A5F57;
@@ -530,7 +533,7 @@ footer a:hover{
     -webkit-text-stroke: 1px #FFE67A;
 }
 .learn--link{
-    color: #5FA4A2;
+    color: var(--color-blue);
     text-decoration: underline;
     margin-bottom: 4px;
 }
@@ -594,4 +597,104 @@ footer a:hover{
 }
 .dashboard .modal-header{
     justify-content: start!important;
+}
+
+/* CREATE STUDY */
+.create--study{
+    background:#fff;
+    border-radius: 4px;
+    max-width: 991px;
+    display: block;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+.create--study .custom--select{
+    margin-left: 0;
+}
+.create--study-actions{
+    justify-content: center;
+}
+.create--study-actions button, .create--study-actions a{
+    padding: 10px;
+    width:35%;
+    outline: none;
+    border-radius: 20px;
+    text-align: center;
+}
+.next--btn{
+    background: var(--color-blue);
+    color:#fff;
+    border:1px solid var(--color-blue);
+}
+.cancel--btn{
+    background: transparent;
+    border:1px solid #ddd;
+    color:#C6C6C6;
+}
+
+/* BUSINESS QUESTIONS */
+.business--questions .question{
+    font-size: 14px;
+    line-height: 18px;
+}
+.business--questions .business-info{
+    display: flex;
+    align-items: baseline;
+}
+.business--questions .business-info h5{
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 600;
+}
+
+.business--questions .business-info .question--btn{
+    margin-right:5px;
+    margin-top:3px;
+}
+.create--study h5{
+    font-weight:700;
+}
+.business--questions .create--study .row:nth-child(2){
+    margin-top: 15px;
+}
+
+/* TARGET CUSTOMERS STUDY */
+.cost--wrap{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight:700;
+    font-size:24px;
+}
+.create--study .custom--select{
+    width:100%;
+}
+.target-modal .modal-header{
+    justify-content: flex-start;
+}
+.type.modal .modal-header{
+    justify-content: flex-start;
+}
+
+/* REVIEW STUDY */
+.review--study .answer{
+    font-weight:600;
+    font-size:20px;
+}
+.review--study .thin{
+    font-weight:400;
+}
+.review--study .review--question{
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+}
+.review--study .review--question button{
+    margin-right:10px;
+}
+.help--alert{
+    border: 2px solid var(--color-blue);
+    border-radius:8px;
+    padding:10px;
+    margin-top:25px;
 }

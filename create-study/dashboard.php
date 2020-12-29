@@ -79,12 +79,12 @@
               </div>
             </div>
             <div class="d-flex flex-column">
-              <button class="create_study--btn">Create new study&nbsp;&nbsp;&nbsp;<i class="fa fa-plus"></i></button>
+              <button  data-toggle="modal" data-target="#myModal" class="create_study--btn">Create new study&nbsp;&nbsp;&nbsp;<i class="fa fa-plus"></i></button>
             </div>
           </div>
         </div>
         <div class="col-md-12 d-flex justify-content-end learn--link-wrap"> 
-          <a href="#" class="learn--link" data-toggle="modal" data-target="#myModal">Learn how to set up a study</a>
+          <a href="#" class="learn--link">Learn how to set up a study</a>
         </div>
         <div class="col-md-12">
           <div class="row study--single">
@@ -223,7 +223,7 @@
                     are and which hypothesis you are trying to validate through your study</p>
                   
                   <div class="modal-actions mt-4 pt-4">
-                      <a href="#" class="review--btn mb-3" data-toggle="modal" data-target="#myModalTectonicStudy">Tectonic Customer Discovery Study</a>
+                      <a href="./business-questions.php" class="review--btn mb-3">Tectonic Customer Discovery Study</a>
                       <a href="#" class="review--btn mb-3" data-toggle="modal" data-dismiss="modal" data-target="#myModalRegularStudy">Regular Study</a>
                   </div>
               </div>
@@ -245,8 +245,8 @@
                     group or sharing it with your own respondents?</p>
                   
                   <div class="modal-actions mt-4 pt-4">
-                      <a href="./create-your-study.html" class="review--btn mb-3">Current Customers</a>
-                      <a href="#" class="review--btn mb-3" data-dismiss="modal">Targeted Customers</a>
+                      <a href="./create-your-study-current-customers.php" class="review--btn mb-3">Current Customers</a>
+                      <a href="./create-your-study-targeted-customers.php" class="review--btn mb-3">Targeted Customers</a>
                   </div>
               </div>
           </div>
@@ -316,24 +316,8 @@
 $(document).ready(function() {
     $('select').niceSelect();
 
-    if(window.innerWidth <= 411){
-        document.querySelectorAll('footer .col-md-3').forEach(el => {
-            el.classList.add('col-6')
-        })
-    }
-
-    // $('.control-options input[type="checkbox"]').ezMark({
-    //     checkboxCls: 'your-default-checkbox-class-name' ,
-    //     checkedCls: 'your-checkbox-class-in-checked-state'
-    // });
-
     
-// $('.input').ezMark();
-
-// $(".demo").simsCheckbox();
-
 });
-
 
     </script>
 </body>

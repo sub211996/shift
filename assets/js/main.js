@@ -13,6 +13,10 @@ $(document).ready(function() {
     // });
 });
 
+// document.getElementById('create_study--btn').addEventListener('click', ()=>{
+//     window.location.href="./create-your-study.html"
+// })
+
 
 
 var questions = [];
@@ -425,5 +429,8 @@ function initForm(){
     $('select').niceSelect();
 }
 initForm();
+
+
+
 
 

@@ -1,50 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Survey</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./assets/css/nice-select.css">
-    <link rel="stylesheet" href="./assets/css/styles.css">
-</head>
-<body>
-    <nav class="navbar navbar-expand-md">
-        <a class="navbar-brand" href="#">
-            <img src="./assets/img/Shift-logo.png" alt="">
-        </a>
-        
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-            <i class="fa fa-bars"></i>
-        </button>
-        
-        <div class="collapse navbar-collapse" id="collapsibleNavbar">
-          <ul class="navbar-nav ml-auto mt-2">
-            <li class="nav-item">
-              <a class="nav-link" href="#">My studies</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Customer Profiles</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Account</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Logout&nbsp;&nbsp;<i class="fa fa-power-off"></i></a>
-            </li>
-          </ul>
-        </div>
-    </nav>
-
+<?php include "../includes/header.php" ?>
 
     <section class="question_section">
       <h1 class="heading">Add study questions</h1>
@@ -66,54 +20,6 @@
         </form>
     </section>
 
-    <footer>
-      <div class="blur"></div>
-      <div class="row">
-        <div class="col-md-3">
-          <h3>Address</h3>
-          <p>Tectonic<br>
-            1–15 Clere Street<br>
-            London EC2A 4UY</p>
-        </div>
-        <div class="col-md-3">
-          <h3>Phone</h3>
-          <p>+44 (0) 1234 5678</p>
-        </div>
-        <div class="col-md-3">
-          <h3>Email</h3>
-          <a href="mailto:info@shift.com">info@shift.com</a>
-        </div>
-        <div class="col-md-3 d-flex justify-content-end socials">
-            <a href="#" class="mr-3">
-              <img src="./assets/img/insta.png" alt="">
-            </a>
-            <a href="#" class="mr-3">
-              <img src="./assets/img/fb.png" alt="">
-            </a>
-            <a href="#">
-              <img src="./assets/img/twitter.png" alt="">
-            </a>
-        </div>
-      </div>
-      <div class="row mt-4">
-        <div class="col-md-3">
-          <h3 >Help and Advice</h3>
-          <a href="#">How it works</a>
-          <a href="#">Terms & Conditioons</a>
-          <a href="#">Privacy Policy</a>
-        </div>
-        <div class="col-md-3">
-          <h3>Company</h3>
-          <a href="#">About</a>
-          <a href="#">Contact</a>
-        </div>
-      </div>
-      <div class="footer-copy d-flex align-items-center justify-content-between">
-        <img src="./assets/img/Shift-logo.png" alt="">
-        <span>&copy; Tectonic 2020</span>
-      </div>
-    </footer>
-    
     <div class="modal fade" id="myModal">
       <div class="modal-dialog modal-lg">
         <div class="modal-content">
@@ -145,16 +51,7 @@
       </div>
     </div>
 
-    
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="./assets/js/jquery.nice-select.min.js"></script>
-    <script src="assets/js/main.js"></script>
-</body>
-</html>
-
-
+    <?php include "../includes/footer.php" ?>
 
 
 
